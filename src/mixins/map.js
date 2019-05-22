@@ -168,7 +168,7 @@ module.exports = {
             var info = new qq.maps.InfoWindow({
                 map: this.map
             });
-            var newposition = this.gcj02towgs84((yl.longtitude / 1e6), (yl.latitude / 1e6))
+            var newposition = this.gcj02tobd09((yl.longtitude / 1e6), (yl.latitude / 1e6))
             var bbbbb = this.gcj02tobd09((yl.longtitude / 1e6), (yl.latitude / 1e6))
             var str = '<wpt lat="' + newposition[1] + '" lon="' + newposition[0] + '">'
             var str2 = bbbbb[0] + ',' + bbbbb[1]
